@@ -1,0 +1,171 @@
+/* Gerais */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variáveis */
+:root {
+  --branco: #F4F4F4;
+  --vermelho: #F43131;
+  --preto: #141414;
+  --hover-color: #777;
+  --background-color: #1E1E1E;
+}
+
+
+body {
+  background-color: var(--background-color);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Barra de navegação */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--preto);
+  color: var(--branco);
+  padding: 20px;
+}
+
+.nav .logo, footer .logo {
+  font-family: 'Bebas Neue', cursive;
+  margin-left: 20px;
+  color: var(--vermelho);
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--branco);
+  transition: ease 0.3s;
+  margin-right: 20px;
+}
+
+.nav a:hover {
+  color: var(--hover-color);
+}
+
+.user-content {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+h2{
+  margin-bottom: 0;
+}
+
+.user-content img{
+  width: 35px;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-icons i{
+  margin-right: 20px;
+  align-items: center !important;
+}
+
+.console-principal {
+  background-image: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0, 0.8) 100%)  , url(/img/psclassic.webp);
+  height: 75vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  color: var(--branco);
+}
+
+.console-principal p{
+  width: 50%;
+}
+
+.btn-princ {
+  width: cover;
+  padding: 10px 25px;
+  align-items: center;
+  border: none;
+  border-radius: 3px;
+  background-color: rgba(0,0,0, 0.5);
+  color: var(--branco);
+  transition:all 0.3s;
+}
+
+.btn-princ:hover{
+  background-color: rgba(255,255,255, 0.5);
+  color:var(--preto);
+}
+
+.titulo {
+  color: var(--branco);
+  padding-top: 20px;
+}
+
+.titulo {
+  font-family: 'Bebas Neue', cursive;
+  font-weight: bold;
+  margin-top:2%;
+  margin-bottom: 2%; 
+  font-size: 30px;
+  color: var(--branco);
+}
+
+/* Carousel */
+
+#carousel-snes img,
+#carousel-playstation img,
+#carousel-megadrive img {
+  overflow: hidden !important;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: block;
+  transition: all 0.3s;
+  filter: grayscale(0.7);
+}
+
+#carousel-snes img:hover,
+#carousel-playstation img:hover,
+#carousel-megadrive img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0);
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background:var(--vermelho) !important;
+}
+
+footer {
+  background-color:var(--branco);
+  position: relative;
+  padding: 20px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+footer .logo {
+  margin: 0;
+}
+
+footer p{
+  padding: 0;
+  margin-bottom: 0;
+}
+
+footer a{
+  text-decoration: none;
+  color: var(--background);
+}
+
+footer i {
+  font-size: larger;
+}
+
+footer i::before{
+  font-size: xx-large;
+  padding: 20px;
+}
