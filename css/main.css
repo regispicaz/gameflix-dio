@@ -159,6 +159,11 @@ footer p{
 footer a{
   text-decoration: none;
   color: var(--background);
+  transition: ease 0.3s;
+}
+
+footer a:hover {
+    color: var(--vermelho);
 }
 
 footer i {
